@@ -1,22 +1,17 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-$servername = getenv('DB_HOSTEADORPAPU');
-$username = getenv('DB_USUARIOPAPIREY');
-$password = getenv('DB_LOQUENODEBES');
-$dbname = getenv('DB_NOMBRE');
-$cookie_key = getenv('GALLETITA_LLAVE');
-$cookie_aad = getenv('GALLETITA_AAD');
-$cookie_value = getenv('GALLETITA_VALOR');
-$smtp_host = getenv('SMTP_HOST');
-$smtp_auth = getenv('SMTP_AUTH');
-$smtp_username = getenv('SMTP_USERNAME');
-$smtp_password = getenv('SMTP_PASSWORD');
-$smtp_secure = getenv('SMTP_SECURE');
-$smtp_port = getenv('SMTP_PORT');
+$servername = "localhost";
+$username = "pmauser";
+$password = "Papu$12345678";
+$dbname = "registro_mun";
+$cookie_key = "84W75Y6JGO877JY@#*$&yfjW38JF245212345";
+$cookie_aad = "9O874YG5NOiu#%yg";
+$cookie_value = "*m1rapap1yoexistojiji@papu";
+$smtp_host = "mail.privateemail.com";
+$smtp_auth = "true";
+$smtp_username = "admin@pnu-aas.com";
+$smtp_password = "administradorpnu#2023";
+$smtp_secure = "tls";
+$smtp_port = "587";
 
 ?>
