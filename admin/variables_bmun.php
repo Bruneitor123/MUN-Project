@@ -1,7 +1,7 @@
 <?php
 
 // Connect to the database
-require_once('envvars.php');
+require_once('/envvars.php');
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);

@@ -183,21 +183,23 @@
                                     <input type="text" style="color:green" class="form-control bg-light" value="" id="modalidadform" name="modalidadform" disabled>
                                 </div>
                                 <div class="col-12">
-                                    <label id="forotextoarriba" for="FormControl52" class="form-label text-white">Foro Deseado <?php echo getenv('DB_HOSTEADORPAPU');
-                                    echo getenv('DB_USUARIOPAPIREY');
-                                    echo getenv('DB_LOQUENODEBES');?> </label>
+                                    <label id="forotextoarriba" for="FormControl52" class="form-label text-white">Foro Deseado</label>
                                     <!-- Estos valores deben cambiar por evento y disponibilidad (ejecutar PHP AAA) -->
                                     <?php
                                     // database connection details
-                                    // require_once('envvars.php');
-
-                                    $servername = "localhost";
-                                    $username = "pmauser";
-                                    $password = "Papu$12345678";
-                                    $dbname = "registro_mun";
+                                    require_once('envvars.php');
 
                                     // create connection
-                                    $conn = new mysqli($servername, $username, $password, $dbname);
+                                    try {
+                                        $conn = new mysqli($servername, $username, $password, $dbname);
+                                    } catch (mysqli_sql_exception $e) {
+                                        echo "Connection failed: " . $e->getMessage();
+                                        echo getenv('DB_HOSTEADORPAPU');
+                                        echo getenv('DB_USUARIOPAPIREY');
+                                        echo getenv('DB_LOQUENODEBES');
+                                        echo getenv('DB_NOMBRE');
+                                    }
+                                    
 
                                     // check connection
                                     if ($conn->connect_error) {

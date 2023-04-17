@@ -1,7 +1,7 @@
 <?php
 
 require_once 'variables_bmun.php';     
-require_once('envvars.php');     
+require_once('/envvars.php');     
 
 ?>
 

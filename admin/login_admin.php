@@ -1,6 +1,6 @@
 <?php
 
-require_once('envvars.php');
+require_once('/envvars.php');
 
 $login = $_POST['login'];
 $password = $_POST['password'];
