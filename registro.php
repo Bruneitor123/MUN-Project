@@ -183,15 +183,13 @@
                                     <input type="text" style="color:green" class="form-control bg-light" value="" id="modalidadform" name="modalidadform" disabled>
                                 </div>
                                 <div class="col-12">
-                                    <label id="forotextoarriba" for="FormControl52" class="form-label text-white">Foro Deseado</label>
+                                    <label id="forotextoarriba" for="FormControl52" class="form-label text-white">Foro Deseado <?php echo getenv('DB_HOSTEADORPAPU');
+                                    echo getenv('DB_USUARIOPAPIREY');
+                                    echo getenv('DB_LOQUENODEBES');?> </label>
                                     <!-- Estos valores deben cambiar por evento y disponibilidad (ejecutar PHP AAA) -->
                                     <?php
                                     // database connection details
                                     // require_once('envvars.php');
-
-                                    echo getenv('DB_HOSTEADORPAPU');
-                                    echo getenv('DB_USUARIOPAPIREY');
-                                    echo getenv('DB_LOQUENODEBES');
 
                                     $servername = "localhost";
                                     $username = "pmauser";
