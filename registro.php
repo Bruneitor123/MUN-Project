@@ -171,48 +171,18 @@
                         <form id="formulario" action="process_form.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
                             <div class="row g-3">
                                 <div class="col-4">
-                                    <label for="FormControl2" class="form-label text-white">Proveniencia</label>
+                                    <label for="FormControl2" class="form-label text-white">Proveniencia (Fijado)</label>
                                     <input type="text" style="color:green" class="form-control bg-light" value="" id="provenienciaform" name="provenienciaform" disabled>
                                 </div>
                                 <div class="col-4">
-                                    <label for="FormControl1" class="form-label text-white">Evento</label>
+                                    <label for="FormControl1" class="form-label text-white">Evento (Fijado)</label>
                                     <input type="text" style="color:green" class="form-control bg-light" value="" id="eventoform" name="eventoform" disabled>
                                 </div>
                                 <div class="col-4">
-                                    <label for="FormControl1" class="form-label text-white">Modalidad</label>
+                                    <label for="FormControl1" class="form-label text-white">Modalidad (Fijado)</label>
                                     <input type="text" style="color:green" class="form-control bg-light" value="" id="modalidadform" name="modalidadform" disabled>
                                 </div>
-                                <div class="col-4">
-                                    <label for="FormControl1" class="form-label text-white">Nombres y Apellidos</label>
-                                    <input type="text" class="form-control bg-light" id="nomyapell" name="nomyapell" placeholder="Escribe tu nombre completo acá" required>
-                                </div>
-                                <div class="col-2">
-                                    <label for="FormControl2" class="form-label text-white">Carnet de Identidad</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light" id="carnet" name="carnet" required>
-                                        <select class="form-select-sm border-light" id="ubicacion" name="ubicacion" required>
-                                            <option selected disabled value>CI</option>
-                                            <option value="OR">OR</option>
-                                            <option value="LP">LP</option>
-                                            <option value="CB">CB</option>
-                                            <option value="PT">PT</option>
-                                            <option value="TJ">TJ</option>
-                                            <option value="SC">SC</option>
-                                            <option value="BE">BE</option>
-                                            <option value="PD">PD</option>
-                                            <option value="CH">CH</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <label for="FormControl3" class="form-label text-white">Número de Celular</label>
-                                    <input type="text" class="form-control bg-light" id="numcel" name="numcel" maxlength="8" required>
-                                </div>
-                                <div class="col-4">
-                                    <label for="FormControl51" class="form-label text-white">Correo Electrónico</label>
-                                    <input type="email" class="form-control bg-light" id="correo" name="correo" placeholder="nombre@correo.com" required>
-                                </div>
-                                <div class="col-4">
+                                <div class="col-8">
                                     <label id="forotextoarriba" for="FormControl52" class="form-label text-white">Foro Deseado</label>
                                     <!-- Estos valores deben cambiar por evento y disponibilidad (ejecutar PHP AAA) -->
                                     <?php
@@ -289,7 +259,38 @@
                                     </select>
 
                                 </div>
-                                <div id="comprobantetexto" class="col-5">
+                                <div class="col-4">
+                                    <label for="FormControl1" class="form-label text-white">Nombres y Apellidos</label>
+                                    <input type="text" class="form-control bg-light" id="nomyapell" name="nomyapell" placeholder="Escribe tu nombre completo acá" required>
+                                </div>
+                                <div class="col-2">
+                                    <label for="FormControl2" class="form-label text-white">Carnet de Identidad</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light" id="carnet" name="carnet" required>
+                                        <select class="form-select-sm border-light" id="ubicacion" name="ubicacion" required>
+                                            <option selected disabled value>CI</option>
+                                            <option value="OR">OR</option>
+                                            <option value="LP">LP</option>
+                                            <option value="CB">CB</option>
+                                            <option value="PT">PT</option>
+                                            <option value="TJ">TJ</option>
+                                            <option value="SC">SC</option>
+                                            <option value="BE">BE</option>
+                                            <option value="PD">PD</option>
+                                            <option value="CH">CH</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label for="FormControl3" class="form-label text-white">Número de Celular</label>
+                                    <input type="text" class="form-control bg-light" id="numcel" name="numcel" maxlength="8" required>
+                                </div>
+                                <div class="col-4">
+                                    <label for="FormControl51" class="form-label text-white">Correo Electrónico</label>
+                                    <input type="email" class="form-control bg-light" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                                </div>
+                                
+                                <div id="comprobantetexto" class="col-8">
                                     <label for="formFile" class="form-label text-white">Comprobante Electrónico</label>
                                     <input class="form-control bg-light" type="file" id="formFile" accept="application/pdf" name="comprobante" required>
                                     <small class="form-text text-dark me-2">*Formato Aceptado: .PDF</small>
