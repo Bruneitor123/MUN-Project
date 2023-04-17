@@ -330,12 +330,13 @@ $conn->close();
 
 
 $mail->isSMTP();
-$mail->Host = 'mail.privateemail.com';
-$mail->SMTPAuth = true;
-$mail->Username = 'admin@pnu-aas.com';
-$mail->Password = 'administradorpnu#2023';
-$mail->SMTPSecure = 'tls';
-$mail->Port = 587;
+$mail->Host = $smtp_host;
+  $mail->SMTPAuth = $smtp_auth;
+  $mail->Username = $smtp_username;
+  $mail->Password = $smtp_password;
+  $mail->SMTPSecure = $smtp_secure;
+  $mail->Port = $smtp_port;
+
 
 $mail->CharSet = "UTF-8";
 $mail->Encoding = 'base64';

@@ -1,6 +1,7 @@
 <?php
 // Replace the database credentials with your own
 require_once 'variables_bmun.php';
+require_once('/envvars.php');
 // Create a connection to the database
 ?>
 
@@ -109,12 +110,12 @@ require_once 'variables_bmun.php';
                 $Body = str_replace("VARIABLE_NOMBRE", $nombre, $Body);
 
                 $mail->isSMTP();
-                $mail->Host = 'mail.privateemail.com';
-                $mail->SMTPAuth = true;
-                $mail->Username = 'admin@pnu-aas.com';
-                $mail->Password = 'administradorpnu#2023';
-                $mail->SMTPSecure = 'tls';
-                $mail->Port = 587;
+                $mail->Host = $smtp_host;
+                $mail->SMTPAuth = $smtp_auth;
+                $mail->Username = $smtp_username;
+                $mail->Password = $smtp_password;
+                $mail->SMTPSecure = $smtp_secure;
+                $mail->Port = $smtp_port;
 
                 $mail->CharSet = "UTF-8";
                 $mail->Encoding = 'base64';

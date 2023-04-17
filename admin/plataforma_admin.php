@@ -1,6 +1,7 @@
 <?php
 
-require_once 'variables_bmun.php';          
+require_once 'variables_bmun.php';     
+require_once('envvars.php');     
 
 ?>
 
@@ -18,10 +19,10 @@ require_once 'variables_bmun.php';
 
 <?php
 $cookie_name = "loggedin";
-$cookie_value = isset($_COOKIE[$cookie_name]) ? $_COOKIE[$cookie_name] : "";
-$decrypted_value = openssl_decrypt($cookie_value, "AES-256-CBC", "84W75Y6JGO877JY@#*$&yfjW38JF245212345", 0, "9O874YG5NOiu#%yg");
+$cookie_value_local = isset($_COOKIE[$cookie_name]) ? $_COOKIE[$cookie_name] : "";
+$decrypted_value = openssl_decrypt($cookie_value_local, "AES-256-CBC", $cookie_key, 0, $cookie_aad);
 
-if($decrypted_value == "*m1rapap1yoexistojiji@papu")  {
+if($decrypted_value === $cookie_value)  {
 
   if (isset($_GET['success'])) {
 
