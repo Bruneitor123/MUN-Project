@@ -190,15 +190,7 @@
                                     require_once('envvars.php');
 
                                     // create connection
-                                    try {
-                                        $conn = new mysqli($servername, $username, $password, $dbname);
-                                    } catch (mysqli_sql_exception $e) {
-                                        echo "Connection failed: " . $e->getMessage();
-                                        echo getenv('DB_HOSTEADORPAPU');
-                                        echo getenv('DB_USUARIOPAPIREY');
-                                        echo getenv('DB_LOQUENODEBES');
-                                        echo getenv('DB_NOMBRE');
-                                    }
+                                    $conn = new mysqli($servername, $username, $password, $dbname);
                                     
 
                                     // check connection
