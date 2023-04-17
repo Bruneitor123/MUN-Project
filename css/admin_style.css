@@ -1,0 +1,16 @@
+table tr td:nth-child(1),
+table tr td:nth-child(4) {
+  width: 50px; /* change the width to your desired value */
+}
+
+table tr td:nth-child(8) {
+    width: 150px;
+}
+
+table tr td:nth-child(9) {
+    width: 50px;
+}
+
+table tr td:nth-child(3) {
+    width: 150px;
+}
