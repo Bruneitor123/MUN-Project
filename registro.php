@@ -187,7 +187,12 @@
                                     <!-- Estos valores deben cambiar por evento y disponibilidad (ejecutar PHP AAA) -->
                                     <?php
                                     // database connection details
-                                    require_once('envvars.php');
+                                    // require_once('envvars.php');
+                                    
+                                    $servername = "localhost";
+                                    $username = "pmauser";
+                                    $password = "Papu$12345678";
+                                    $dbname = "registro_mun";
 
                                     // create connection
                                     $conn = new mysqli($servername, $username, $password, $dbname);

@@ -14,8 +14,4 @@ $smtp_password = getenv('SMTP_PASSWORD');
 $smtp_secure = getenv('SMTP_SECURE');
 $smtp_port = getenv('SMTP_PORT');
 
-echo $servername;
-echo $username;
-echo $password;
-echo $dbname;
 ?>
