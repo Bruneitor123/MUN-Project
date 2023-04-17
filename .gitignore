@@ -1,6 +1,6 @@
 node_modules/
 *.log
-.env
+envvars.php
 comprobantes-bassmun
 comprobantes-swordmun_int
 qrs-bassmun
