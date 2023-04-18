@@ -85,7 +85,7 @@ if($decrypted_value === $cookie_value)  {
 <nav class="nav__cont">
   <ul class="nav">
     <li class="nav__items ">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 48 48">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 48 48">
         <use xlink:href="#home"></use>
       </svg>
       <a href="">Home</a>
