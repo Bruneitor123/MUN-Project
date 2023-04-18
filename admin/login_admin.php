@@ -16,7 +16,7 @@ if (isset($user_dict[$login]) && $user_dict[$login] == $password) {
     // Set response message and status code for successful authentication
     $response = array("status" => "success", "message" => "Login successful");
     $cookie_name = "loggedin";
-    $encrypted_value = openssl_encrypt($cookie_value, "AES-256-CBC", $cookie_key, 0, $coookie_aad);
+    $encrypted_value = openssl_encrypt($cookie_value, "AES-256-CBC", $cookie_key, 0, $cookie_aad);
 
     setcookie($cookie_name, $encrypted_value, time()+3600, '/', $_SERVER['HTTP_HOST'], true, true); // Set cookie for logged in user
     exit(); // Stop execution of the script
