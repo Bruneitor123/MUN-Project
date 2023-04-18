@@ -2,7 +2,9 @@
 <canvas id="canvas" width="500" height="500"></canvas>
 
 <script>
-    var options = ["$100", "$10", "$25", "$250", "$30", "$1000", "$1", "$200", "$45", "$500", "$5", "$20", "Lose", "$1000000", "Lose", "$350", "$5", "$99"];
+    var options = ["Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "República Dominicana", 
+                  "Ecuador", "El Salvador", "Guatemala", "Haití", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", 
+                  "Puerto Rico", "Uruguay", "Venezuela"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
