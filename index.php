@@ -531,10 +531,9 @@
             var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)loggedin\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 
             if (cookieValue) {
-                window.location.href = './admin/plataforma_admin.php';                                
-            }
-            
-            Swal.fire({
+                window.location.href = './admin/plataforma_admin.php';
+            } else {
+                Swal.fire({
                 title: 'Inicio de Sesión Admin',
                 html: `<input type="text" id="login" class="swal2-input" placeholder="Usuario">
                 <input type="password" id="password" class="swal2-input" placeholder="Contraseña">`,
@@ -571,6 +570,9 @@
                         }
                     })
             })
+            }
+            
+            
 
         }
 
