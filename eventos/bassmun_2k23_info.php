@@ -365,7 +365,7 @@
                             password: password
                         },
                         success: function(response) {
-                            window.location.href = 'admin/plataforma_admin.php';
+                            window.location.href = './admin/plataforma_admin.php';;
                         },
                         error: function(xhr, status, error) {
                             Swal.fire({

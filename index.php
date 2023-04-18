@@ -531,7 +531,7 @@
             var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)loggedin\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 
             if (cookieValue) {
-                window.location.href = 'admin/plataforma_admin.php'                                
+                window.location.href = './admin/plataforma_admin.php';                                
             }
             
             Swal.fire({
@@ -560,7 +560,7 @@
                             password: password
                         },
                         success: function(response) {
-                            window.location.href = 'admin/plataforma_admin.php';
+                            window.location.href = './admin/plataforma_admin.php';;
                         },
                         error: function(xhr, status, error) {
                             Swal.fire({
