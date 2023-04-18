@@ -156,24 +156,37 @@ $paises_comision_paz = array(
   $result = $stmt->get_result();
 
       if ($foro == 'Comité de Tierra y Territorio, Recursos Naturales y Hoja de la Coca (Foro Nacional)') {
+        if ($result->num_rows > 0) {
           while ($row = $result->fetch_assoc()) {
-              $paises_ya_elegidos[] = $row['equipo_diplomatico'];
+            $paises_ya_elegidos[] = $row['equipo_diplomatico'];
           }
+        } else {
+          $paises_disponibles = $delegados_nacionales;
+        }
+          
           $paises_disponibles = array_diff($delegados_nacionales, $paises_ya_elegidos);
           $random_index = array_rand($paises_disponibles);
           $valor_pais_random = $paises_disponibles[$random_index];
 
       } else if ($foro == 'Comisión de Consolidación de la Paz') {
-          while ($row = $result->fetch_assoc()) {
-            $paises_ya_elegidos[] = $row['equipo_diplomatico'];
+          if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+              $paises_ya_elegidos[] = $row['equipo_diplomatico'];
+            }
+        } else {
+          $paises_disponibles = $paises_comision_paz;
         }
         $paises_disponibles = array_diff($paises_comision_paz, $paises_ya_elegidos);
         $random_index = array_rand($paises_disponibles);
         $valor_pais_random = $paises_disponibles[$random_index];
 
       } else {
-          while ($row = $result->fetch_assoc()) {
-            $paises_ya_elegidos[] = $row['equipo_diplomatico'];
+          if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+              $paises_ya_elegidos[] = $row['equipo_diplomatico'];
+            }
+        } else {
+          $paises_disponibles = $paises_general;
         }
         $paises_disponibles = array_diff($paises_general, $paises_ya_elegidos);
         $random_index = array_rand($paises_disponibles);
