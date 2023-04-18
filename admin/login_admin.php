@@ -6,6 +6,7 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 
 $user_dict = array(
+    "simulacros_mun" => "Simulacros_MUN2023",
     "brunovinvia" => "#Admin-Brunocapo4#",
     "anitabaya" => "#Miss-Anita-Baya$/a",
     "sec_administrativo" => "#$#Secretario_Admin$14"
