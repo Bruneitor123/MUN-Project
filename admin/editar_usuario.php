@@ -1,7 +1,7 @@
 <?php
 // Replace the database credentials with your own
 require_once 'variables_bmun.php';
-require_once('/envvars.php');
+require_once(__DIR__ . '/envvars.php');
 // Create a connection to the database
 ?>
 

@@ -458,7 +458,6 @@
         function esconderforo() {
 
             if (opciones.includes(modalidad)) {
-                var formula = document.getElementById("formula2");
                 var forodes = document.getElementById("forodes");
                 var forodeso = document.getElementById("forotextoarriba");
                 var comprobantetexto = document.getElementById("comprobantetexto");
@@ -480,7 +479,6 @@
         if(url.indexOf('&foro=none') === -1 && url.indexOf('&' + foro + '=') != -1) {
 
             var forodes = document.getElementById("forodes");
-            var formula = document.getElementById("formula2");
             forodes.value = '<?php echo $_GET['foro']?>';
             var foro = urlParams.get("foro");
             formula.hidden = false;
@@ -548,35 +546,6 @@
             }
 
             window.location.href = newRef;
-            showpaises();
-        }
-
-
-        function showpaises() {
-
-            var options = [
-                "Mesa (Presidente)",
-                "Mesa (Moderador/a)",
-                "Mesa (Oficial de Conferencias)",
-                "Mesa (Paje)",
-                "Staff (Comité)",
-                "Staff (Otros)",
-                "Asesor (Profesor/Encargado)"
-                ];
-            var urlParams = new URLSearchParams(window.location.search);
-            var modalidad = urlParams.get("modalidad");
-
-            if (options.includes(modalidad)) {
-                return;
-            } else {
-                var formula = document.getElementById("formula2");
-                var forodes = document.getElementById("forodes");
-                
-                var foro = urlParams.get("foro");
-
-                formula.hidden = false;
-            }
-            
         }
 
         function validateForm() {
