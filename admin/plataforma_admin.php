@@ -88,7 +88,7 @@ if($decrypted_value === $cookie_value)  {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
         <use xlink:href="#home"></use>
       </svg>
-      <a href="plataforma_admin_bmun.php">DB BassMUN 2023</a>
+      <a href="plataforma_admin_bmun.php">BassMUN</a>
     </li>
     
     <li class="nav__items ">
