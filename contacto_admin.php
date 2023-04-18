@@ -4,7 +4,7 @@
     use PHPMailer\PHPMailer\Exception;
 
     require '/vendor/autoload.php';
-    require_once(__DIR__ . '/envvars.php');
+    require_once('/var/www/html/envvars.php');
 
     $mail = new PHPMailer(true);
 
