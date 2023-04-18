@@ -119,8 +119,10 @@ if($decrypted_value === $cookie_value)  {
     <main>
       
       <h1 class="display-4">Bienvenido a la página de administración MUN.</h1>
-      <p class="lead">Acá se pueden editar todos los datos que quieras. Exceptuando el identificador único ya que es esencial para la identificación del usuario.</p>
-      <p><a href="/" class="btn btn-primary">Cerrar Sesión</a></p>
+      <div class="col text-center">
+        <p class="lead">Por favor, elige algún item de nuestro sidebar a la izquierda. Pronto nuevas opciones.</p>
+        <p><a href="/" class="btn btn-primary">Cerrar Sesión</a></p>
+      </div>
     </main>
   </div>
 
