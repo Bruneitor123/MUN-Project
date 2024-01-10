@@ -1,6 +1,9 @@
 <?php
 
-$eeuu_equidpl_info_csi = "Al formar un equipo diplomático eres parte de varios delegados que buscan un propósito: Ganar. \nEl Consejo de Seguridad Nacional (nsc) de Estados Unidos fue creado por el presidente Harry Truman (1945-1953), mediante el Acta de Seguridad Nacional de 1947, instrumento que también creo el Departamento de Defensa (Fusionando el Departamento de 
+// Variables
+
+$eeuu_equidpl_info_csi = "Al formar un equipo diplomático eres parte de varios delegados que buscan un propósito: Ganar. \nEl Consejo de Seguridad Nacional (nsc) de Estados Unidos fue creado por el presidente Harry Truman (1945-1953),
+ mediante el Acta de Seguridad Nacional de 1947, instrumento que también creo el Departamento de Defensa (Fusionando el Departamento de 
 Guerra y el Departamento de la Marina) y la Agencia Central de Inteligencia (cia). En ese 
 momento, el propósito del Consejo fue “aconsejar al presidente de los Estados Unidos 
 con respecto a la integración de las políticas interna, externa y militar, relacionada con 
