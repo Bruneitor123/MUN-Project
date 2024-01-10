@@ -1,7 +1,10 @@
 node_modules/
+vendor/
 *.log
 envvars.php
 comprobantes-bassmun
 comprobantes-swordmun_int
 qrs-bassmun
 qrs-swordmun_int
+composer.json
+composer.lock
