@@ -78,7 +78,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.php" class="navbar-brand p-0">
+            <a href="index.html" class="navbar-brand p-0">
                 <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Programa de NN.UU. - A.A.S.</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -86,7 +86,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.php" class="nav-item nav-link active">Inicio</a>
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Foros</a>
                         <div class="dropdown-menu m-0">
@@ -120,13 +120,13 @@
                             <a href="#" class="dropdown-item">Nuestra Historia (Próximamente)</a>
                             <hr class="dropdown-divider">
                             <button class="dropdown-item" onclick="swallogin()">Login Admin</button>
-                            <a href="quote.php" class="dropdown-item">Registrar Inscripción</a>
+                            <a href="quote.html" class="dropdown-item">Registrar Inscripción</a>
                         </div>
                     </div>
-                    <a href="contact.php" class="nav-item nav-link">Contacto</a>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
                 </div>
                 <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <a href="quote.php" class="btn btn-primary py-2 px-4 ms-3">Inscríbete a Eventos!</a>
+                <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3">Inscríbete a Eventos!</a>
             </div>
         </nav>
 
@@ -354,7 +354,7 @@
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 footer-about">
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="index.php" class="navbar-brand">
+                        <a href="index.html" class="navbar-brand">
                             <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>NN.UU. - A.A.S</h1>
                         </a>
                         <p class="mt-3 mb-4">Las Naciones Unidas del Colegio Anglo Americano es un Programa para Simulaciones (MUN), con la intención de forjar líderes en el Departamento de Oruro, Bolivia.</p>
@@ -392,9 +392,9 @@
                                 <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
                                 <a class="text-light mb-2" href="sobrenosotros.php"><i class="bi bi-arrow-right text-primary me-2"></i>Sobre Nosotros</a>
                                 <a class="text-light mb-2" href="eventos.php"><i class="bi bi-arrow-right text-primary me-2"></i>Eventos</a>
-                                <a class="text-light mb-2" href="equipo.php"><i class="bi bi-arrow-right text-primary me-2"></i>Miembros del Equipo</a>
-                                <a class="text-light mb-2" href="blog.php"><i class="bi bi-arrow-right text-primary me-2"></i>Últimos Blogs</a>
-                                <a class="text-light" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contáctanos</a>
+                                <a class="text-light mb-2" href="equipo.html"><i class="bi bi-arrow-right text-primary me-2"></i>Miembros del Equipo</a>
+                                <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Últimos Blogs</a>
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contáctanos</a>
                             </div>
                         </div>
                     </div>
